@@ -5,7 +5,15 @@ Power Automate FlowSorterは、Power Automateのフローを種類ごとに自�
 ## 機能
 
 - Power Automateのフローを種類ごとに自動で並べ替えます。
-- 対応ブラウザ: Google Chrome, Microsoft Edge など、Manifest V3に対応したブラウザ
+
+- Before
+  - [BEFORE](BeforeImage.png)
+- After
+  - [AFTER](AfterImage.png)
+
+## 動作環境
+
+- 対応ブラウザ: Google Chrome, Microsoft Edge など、Manifest V3に対応したブラウザで動作します。
 
 ## 開発者モードとしてのインストール方法
 
@@ -24,3 +32,7 @@ Power Automate FlowSorterは、Power Automateのフローを種類ごとに自�
 ## ライセンス
 
 [LICENSE](LICENSE)
+
+## ロゴ
+
+[ICOOON MONOとは? | アイコン素材ダウンロードサイト「icooon-mono」 | 商用利用可能なアイコン素材が無料(フリー)ダウンロードできるサイト](https://icooon-mono.com/about-icoon-mono/)

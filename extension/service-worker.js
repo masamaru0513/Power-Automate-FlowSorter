@@ -8,4 +8,5 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             url: tab.url // 現在のタブのURLを送信
         });
     }
+    return true;
 });
