@@ -7,9 +7,9 @@ Power Automate FlowSorterは、Power Automateのフローを種類ごとに自�
 - Power Automateのフローを種類ごとに自動で並べ替えます。
 
 - Before
-  - [BEFORE](BeforeImage.png)
+  - ![BEFORE](BeforeImage.png)
 - After
-  - [AFTER](AfterImage.png)
+  - ![AFTER](AfterImage.png)
 
 ## 動作環境
 
