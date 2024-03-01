@@ -80,4 +80,6 @@ function processElement(targetElement) {
 }
 
 // 監視を開始する
-waitForElement();
+if (!window.location.href.endsWith('/details')) {
+    waitForElement();
+}
