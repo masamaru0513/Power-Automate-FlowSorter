@@ -5,8 +5,7 @@ const TARGET_CLASS_NAME = '.ms-List';
  * タブが更新されたときにservice-workerからの応答を受け取る
  */
 chrome.runtime.onMessage.addListener((response) => {
-    if (response.message === 'urlChanged' || response.url.includes("/flows")) {
-        console.log("URL変更");
+    if (response.message === 'urlChanged' && response.url.includes("/flows") && !response.url.endsWith("/details")) {
         waitForElement();
     }
 });
