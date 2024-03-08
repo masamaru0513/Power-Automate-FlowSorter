@@ -2,11 +2,21 @@
 const TARGET_CLASS_NAME = '.ms-List';
 
 /**
+ * 正規表現によるパターンマッチ判定
+ */
+function checkURL(url) {
+    const regex = /^https:\/\/make\.powerautomate\.com\/environments\/[^/]+\/flows(\/shared\/?)?$/;
+    return regex.test(url);
+}
+
+/**
  * タブが更新されたときにservice-workerからの応答を受け取る
  */
 chrome.runtime.onMessage.addListener((response) => {
-    if (response.message === 'urlChanged' && response.url.includes("/flows") && !response.url.endsWith("/details")) {
-        waitForElement();
+    if (response.message === 'urlChanged' && response.url.includes("/flows")) {
+        if (checkURL(response.url)) {
+            waitForElement();
+        }
     }
 });
 
@@ -80,6 +90,6 @@ function processElement(targetElement) {
 }
 
 // 監視を開始する
-if (!window.location.href.endsWith('/details')) {
+if (checkURL(window.location.href)) {
     waitForElement();
 }
